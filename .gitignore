@@ -73,3 +73,10 @@ Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Content Stuff
+Content/*/
+!Content/*.umap
+!Content/*.uasset
+!Content/Developers/*
+!Content/Collections/*
