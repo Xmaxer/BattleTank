@@ -75,8 +75,7 @@ Intermediate/*
 DerivedDataCache/*
 
 # Content Stuff
-Content/*/
-!Content/*.umap
-!Content/*.uasset
-!Content/Developers/*
-!Content/Collections/*
+Content/LandscapeAutoMaterial/*
+Content/Tank/*
+Content/Downloaded_Tank/*
+Content/Landscape_Materials/*
