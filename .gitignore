@@ -74,6 +74,8 @@ Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
+#Compiled stuff
+Compiled/*
 # Content Stuff
 Content/LandscapeAutoMaterial/*
 Content/Tank/*
