@@ -6,6 +6,7 @@
 
 void ATankAIController::BeginPlay()
 {
+	Super::BeginPlay();
 	ATank* PlayerTank = GetPlayerTank();
 
 	if (!PlayerTank)
@@ -29,6 +30,21 @@ ATank * ATankAIController::GetPlayerTank() const
 	else
 	{
 		return Cast<ATank>(PlayerPawn);
+	}
+}
+
+void ATankAIController::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	if (GetPlayerTank())
+	{
+		// TODO move towards the player
+		// aim towards player
+		GetAIControlledTank()->AimAt(GetPlayerTank()->GetActorLocation());
+
+		//Fire
+		
 	}
 }
 

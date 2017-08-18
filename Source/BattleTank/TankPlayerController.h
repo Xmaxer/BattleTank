@@ -26,6 +26,8 @@ private:
 
 	bool GetRayHitLocation(FVector& HitLocation);
 
+	bool GetLookVectorHitLocation(FVector WorldDirection, FVector& HitLocation);
+
 	UPROPERTY(EditAnywhere)
-	float CrosshairX = 0.5, CrosshairY = 0.3333;
+	float CrosshairX = 0.5, CrosshairY = 0.3333, LineTraceRange = 1000000;
 };
